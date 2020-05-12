@@ -4,6 +4,21 @@ Free website for anime streaming
 - [x] all platform
 - [x] auto image - synopsis - desciption - genres
 ------------------------------
+# SETUP:
+Edit config.js with your firebase config and that's all
+```js
+const firebaseConfig = {
+    apiKey: null,
+    authDomain: null,
+    databaseURL: null,
+    projectId: null,
+    storageBucket: null,
+    messagingSenderId: null,
+    appId: null,
+    measurementId: null
+};
+```
+------------------------------
 DATABASE FORM:
 ```json
 {
