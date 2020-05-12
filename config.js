@@ -1,6 +1,6 @@
 /*
     FIREBASE config / database
-    VARIABLE name: firebaseConfig !important
+    to edit !
 */
 const firebaseConfig = {
     apiKey: null,
