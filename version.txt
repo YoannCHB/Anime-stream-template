@@ -1,0 +1,14 @@
+Only for chromium:
+------------------
+
+-	V-Beta 0.0.5
+-	Fondator: Yoann CHB
+-	Helper: Rémi D
+
+MAJ:
+----
+
+-	Corrections des bugs
+-	Amelioration de la performance
+-	Amelioration des graphismes
+-       Mobile ajouté

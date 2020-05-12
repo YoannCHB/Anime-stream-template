@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>AnimeWiki || Watch any anime at any time</title>
+    <script src="config.js"></script>
+    <script src="lib/break.js"></script>
+    <script src="lib/anime.js"></script>
+    <script src="lib/firebaseLoader.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+
+    <!-- SEARCH BAR -->
+    <header>
+        <h2>AnimeWiki</h2>
+        <input autocomplete="off" type="text" placeholder="Tapez votre recherche ici..." id="search">
+    </header>
+
+    <main>
+
+        <!-- ANIMES LIST -->
+        <section id="animes_list"></section>
+
+        <!-- ANIME DESCRIPTION POPUP -->
+        <section id="popup_background">
+            <section id="popup"></section>
+        </section>
+
+        <!-- WAIT LOAD -->
+        <section id="page_chargement">
+            <div>
+                <img alt="image_chargement" src="./img/chargement.png">
+                <p>Veuillez patientez</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+<script src="js/main.js"></script>
+<script src="js/search.js"></script>
+</html>

@@ -1,0 +1,271 @@
+/*
+    SETUP
+*/
+p,h1,h2,h3,h4,h5,span,pre{
+    font-family: Arial;
+    color: White;
+}
+
+*{
+    outline: none;
+
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+    -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+    user-select: none; /* Propriété standard */
+}
+
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: #171717;
+}
+
+
+
+/*
+    PAGE de chargement
+*/
+
+#page_chargement{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #171717;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: 1s ease;
+    overflow: hidden;
+    z-index: 3;
+}
+
+#page_chargement div{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#page_chargement img{
+    width: 20em;
+    height: auto;
+}
+
+#page_chargement p{
+    margin: -5em;
+}
+
+
+
+
+
+/*
+    HEAD
+*/
+header{
+    display: flex;
+    width: 100%;
+    height: 3em;
+    position: fixed;
+    top: 0;
+    box-shadow: 5px 10px 18px #888888;
+    background-color: #171717;
+    z-index: 2;
+}
+
+header h2{
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+header input{
+    flex: 1 1 100%;
+    padding-left: 0.5em;
+}
+
+main{
+    position: absolute;
+    top: 6em;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/*
+    MAIN animes list
+*/
+#animes_list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+#animes_list article{
+    margin: 1em;
+    position: relative;
+    cursor: pointer;
+    background-color: White;
+    width: calc(20% - 2em);
+    height: 25vw;
+}
+
+
+
+/*
+    POPUP synopsy + link
+*/
+#popup_background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000050;
+    opacity: 0;
+    display: none;
+    transition: 0.5s ease;
+    z-index: 999;
+}
+
+#popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: auto;
+    background: #171717;
+    box-shadow: -2px 8px 22px #888888;
+    padding: 1em;
+    max-height: 75%;
+    overflow: auto;
+}
+
+#popup img{
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+
+#popup h1{
+    text-align: center;
+}
+
+#popup p{
+    text-align: justify;
+    text-indent: 3em;
+}
+
+#popup div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#popup a{
+    text-decoration: none;
+    color: White;
+    padding: 1em;
+    background-color: #00000099;
+    text-align: center;
+    cursor: pointer;
+    margin: 0.5em;
+    flex: 1 1 15%;
+}
+
+#popup a:hover{
+    background-color: #00000050;
+}
+
+
+
+
+
+/* 
+    TITLE ARTICLE 
+*/
+.titleArticle{
+    background-color: #00000090;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 2em);
+    padding: 1em;
+}
+
+.titleArticle p{
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+
+
+/*
+    GENRES
+*/
+.genresArticle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 1em);
+    height: calc(100% - 1em);
+    background-color: #00000099;
+    opacity: 0;
+    transition: 0.5s ease;
+    padding: 0.5em;
+}
+
+.genresArticle:hover{
+    opacity: 1;
+}
+
+.genresArticle p{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/*
+    PHONE
+*/
+@media (max-width: 640px) {
+    #animes_list article{
+        margin: 1em;
+        position: relative;
+        cursor: pointer;
+        background-color: White;
+        width: calc(50% - 2em);
+        height: 65vw;
+    }
+
+    #popup{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: calc(100% - 1em);
+        height: 100%;
+        max-height: 100%;
+        background: #171717;
+        padding: 0.5em;
+        overflow: auto;
+        transform: translate(0,0);
+    }
+
+    #popup_background{
+        display: none;
+    }
+}
