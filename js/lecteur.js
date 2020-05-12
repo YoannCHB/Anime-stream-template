@@ -44,7 +44,7 @@ function launchVideo(liste, ep){
     //Accueille
     let accueille = document.createElement('a');
     accueille.href = "../index.html";
-    accueille.innerHTML = "Accueille";
+    accueille.innerHTML = "Main";
     div.appendChild(accueille);
 
     if(Number(ep)!=1){
@@ -56,7 +56,7 @@ function launchVideo(liste, ep){
             jsonResult.episode = Number(jsonResult.episode)-1;
             launchVideo(liste, jsonResult.episode);
         }
-        epPrecedent.innerHTML = "< Precedent";
+        epPrecedent.innerHTML = "< Previous";
         div.appendChild(epPrecedent);
     }
 
@@ -69,7 +69,7 @@ function launchVideo(liste, ep){
             jsonResult.episode = Number(jsonResult.episode)+1;
             launchVideo(liste, jsonResult.episode);
         }
-        epSuivant.innerHTML = "Suivant >";
+        epSuivant.innerHTML = "Next >";
         div.appendChild(epSuivant);
     }
 
