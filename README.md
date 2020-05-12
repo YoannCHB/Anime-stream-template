@@ -43,11 +43,11 @@ Example:
 ```
 --------------------
 # SCREEN
-Mobile
+- Mobile
 <img alt="mobile acceuille" src="./screen/Mobile/acceuille.png"/>
 <img alt="mobile descrip" src="./screen/Mobile/descrip.png"/>
 <img alt="mobile video" src="./screen/Mobile/video.png"/>
-PC
+- PC
 <img alt="PC acceuille" src="./screen/PC/accueille.png"/>
 <img alt="PC description" src="./screen/PC/description.png"/>
 <img alt="PC video" src="./screen/PC/video.png"/>
