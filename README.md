@@ -3,6 +3,7 @@ Free website for anime streaming
 - [x] for firebase
 - [x] all platform
 - [x] auto image - synopsis - desciption - genres
+- [x] full english version
 ------------------------------
 # SETUP:
 Edit config.js with your firebase config and that's all
