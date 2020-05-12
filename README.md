@@ -22,7 +22,9 @@ const firebaseConfig = {
 DATABASE FORM:
 ```json
 {
-  "Anime name": ["link iframe ep 1", "link iframe ep 2", ...]
+  "Anime name": {
+    "embed": ["link iframe ep 1", "link iframe ep 2", ...]
+  }
 }
 ```
 Example:
