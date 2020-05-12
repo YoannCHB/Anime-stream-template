@@ -1,6 +1,5 @@
 # Anime-stream-template
 Free website for anime streaming
------------------------------
 - [x] for firebase
 - [x] all platform
 - [x] auto image - synopsis - desciption - genres
